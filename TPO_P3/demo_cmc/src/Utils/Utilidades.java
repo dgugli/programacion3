@@ -7,9 +7,9 @@
  * 
  * Objetivo: 	Trabajo Practico Obligatorio
  * Descripcion: 
- * 				Desarrollo de un algoritmo heurístico para la determinación en tiempo real del camino de mínimo costo 
- * 				entre dos puntos cualesquiera definidos como origen – destino, dentro de un marco de referencia. 
- * 				Contemplando la representación visual en la implementación.
+ * 				Desarrollo de un algoritmo heurÃ­stico para la determinaciÃ³n en tiempo real del camino de mÃ­nimo costo 
+ * 				entre dos puntos cualesquiera definidos como origen â€“ destino, dentro de un marco de referencia. 
+ * 				Contemplando la representaciÃ³n visual en la implementaciÃ³n.
  * 
  * Integrantes:
  * Legajo	Apellido,Nombre
@@ -18,7 +18,7 @@
  * 1030762	Gomez Antonaz, Juan Pablo
  * 1093958	Sabatino, Noemi Nancy Analia
  * 1107524	Bedecarats Asselborn, Esteban Diego
- * 1093961	Guglielmi, Danel
+ * 1093961	Guglielmi, Daniel
  */
 package Utils;
 import graficos.Punto;
