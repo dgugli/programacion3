@@ -7,9 +7,9 @@
  * 
  * Objetivo: 	Trabajo Practico Obligatorio
  * Descripcion: 
- * 				Desarrollo de un algoritmo heurístico para la determinación en tiempo real del camino de mínimo costo 
- * 				entre dos puntos cualesquiera definidos como origen – destino, dentro de un marco de referencia. 
- * 				Contemplando la representación visual en la implementación.
+ * 				Desarrollo de un algoritmo heurÃ­stico para la determinaciÃ³n en tiempo real del camino de mÃ­nimo costo 
+ * 				entre dos puntos cualesquiera definidos como origen â€“ destino, dentro de un marco de referencia. 
+ * 				Contemplando la representaciÃ³n visual en la implementaciÃ³n.
  * 
  * Integrantes:
  * Legajo	Apellido,Nombre
@@ -30,9 +30,9 @@ import java.awt.Color;
  * Primero expande eje x, segundo expande el eje y.
  * Reitera la lista expandiendo el siguiente (siempre expandiendo de a pares)
  * El recorrido es secuencial (conforme al orden de marcado de los puntos en el mapa)
- * Invoca la método dibujar en cada iteración.
- * Al finalizar la iteración expande los contiguos entre el último y el primero de la lista.
- * Vuelve a Invocar la método dibujar para cerrar el ciclo.
+ * Invoca la mÃ©todo dibujar en cada iteraciÃ³n.
+ * Al finalizar la iteraciÃ³n expande los contiguos entre el Ãºltimo y el primero de la lista.
+ * Vuelve a Invocar la mÃ©todo dibujar para cerrar el ciclo.
  * No contempla las densidades definidas en la matriz (mapa)
  */
 import java.util.ArrayList;
@@ -52,8 +52,6 @@ public class TpoApp extends Utilidades {
 	private MapaInfo mapa;
 	private CmcImple cmc;
 	private Punto puntoFinal;
-	PriorityQueue<NodoPrio> openList = null;
-	PriorityQueue<NodoPrio> closedList = null;
 
 	public TpoApp(MapaInfo mapa, CmcImple cmc) {
 		this.mapa = mapa;
@@ -174,7 +172,7 @@ public class TpoApp extends Utilidades {
 				if (y < yy) { // Verificamos que por saltarnos 'y' no nos hayamos ido del mapa
 					pNuevo = new Punto(x, y);
 					if ((mapa.getDensidad(x, y) != 4) && (!listas.isClosedList(pNuevo))) { // Si no es infranqueable, lo
-																							// añadimos al listado
+																							// aÃ±adimos al listado
 						nuevo = new NodoPrio(pNuevo, this.puntoFinal, mapa.getDensidad(x, y),
 								costoDesplazamiento(nodo, pNuevo));
 						listaAdy.add(nuevo);
